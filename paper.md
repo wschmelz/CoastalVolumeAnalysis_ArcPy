@@ -1,4 +1,5 @@
-title: "A Geospatial Workflow for Quantifying Coastal Geomorphological Change"
+---
+title: 'A Geospatial Workflow for Quantifying Coastal Geomorphological Change'
 tags:
   - coastal geomorphology
   - GIS
@@ -6,17 +7,20 @@ tags:
   - shoreline monitoring
   - ArcGIS workflow
 authors:
-  - name: "FirstName LastName"
+  - name: William J. Schmelz
+    orcid: 0000-0002-2588-7985
     affiliation: 1
-  - name: "SecondName LastName"
-    affiliation: 2
 affiliations:
-  - index: 1
-    name: "Affiliation 1, Some Institution, Country"
-  - index: 2
-    name: "Affiliation 2, Another Institution, Country"
+  - name: Department of Earth and Planetary Sciences, Rutgers University
+    index: 1
 date: 9 December 2024
 bibliography: paper.bib
+
+# Optional fields if submitting to a AAS journal too, see this blog post:
+# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
+aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
+aas-journal: Astrophysical Journal <- The name of the AAS journal.
+
 ---
 
 ## Summary

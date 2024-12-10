@@ -1,0 +1,8 @@
+easting = 586681
+northing = 4474592
+baselineangle=97.5
+compdirection = "left"
+distance = 30
+length = 700
+compartments = 45
+elev_threshold = -0.335

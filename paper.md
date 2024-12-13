@@ -2,10 +2,10 @@
 title: 'ArcPy Tool for Geospatial Workflow that Quantifies Coastal Geomorphological Change'
 tags:
   - coastal geomorphology
-  - GIS
-  - 3D volumetric analysis
-  - shoreline monitoring
-  - ArcGIS workflow
+  - spatial analysis
+  - coastal monitoring
+  - ArcPy
+  - Python
 authors:
   - name: William J. Schmelz
     orcid: 0000-0002-2588-7985

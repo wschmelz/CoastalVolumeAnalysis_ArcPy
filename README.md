@@ -39,8 +39,8 @@ Resource Report NPS/NCBN/NRR—2018/1712. National Park Service, Fort Collins, C
 /14_TotalVectors/         # Endpoint vector feature classes
 /15_Images/               # Map images portraying volumetric change
 3D_Analyst.py             # Main script
-3D_Analyst_params.txt     # Analysis parameter file
-Compartment_params.txt    # Compartment geometry file
+3D_Analyst_params.txt     # Analysis and map visualization parameter file
+Compartment_params.txt    # Compartment/baseline parameter file
 ```
 
 ## Required software

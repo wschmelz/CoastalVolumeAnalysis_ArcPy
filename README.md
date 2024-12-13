@@ -1,9 +1,13 @@
-```md
-
 # ArcPy Tool for Coastal Geomorphological Change Analysis
 
 ## Overview
-The 3D_Analyst.py script programatically processes multiple temporally distinct topographical survey datasets and calculates the volumetric change occurring between surveys throughout a survey site using ArcGIS and ArcPy. The script processes survey data stored within a shapefile to generate Digital Elevation Models (DEMs) within a defined three-dimensional spatial domain, and makes the volumetric change calculations. The outputs of the script are data tables that record spatiotemporal calculations of volumetric change, raster datasets that represent the spatial distribution of erosion and deposition between surveys, and images that visualize the spatiotemporal changes.
+The 3D_Analyst.py script programatically processes multiple temporally distinct topographical survey datasets and calculates the volumetric change occurring between surveys throughout a survey site using ArcGIS and ArcPy. The script processes survey data stored within a shapefile to generate Digital Elevation Models (DEMs) within a defined three-dimensional spatial domain, and makes the volumetric change calculations. The outputs of the script are data tables that record spatiotemporal calculations of volumetric change, raster datasets that represent the spatial distribution of erosion and deposition between surveys, and images that visualize the spatiotemporal changes. 
+
+The Python based analytical tool we provide performs the data analysis tasks defined by the “Coastal Landform Elevation Models” protocol of the Northeast Coastal and Barrier Network of the National Park Service. Please cite this protocol in the documentation of any application of this software: 
+
+Psuty, N. P., W. J. Schmelz, and A. Habeck. 2018. Northeast Coastal and Barrier Network 
+geomorphological monitoring protocol: Part III – coastal landform elevation models. Natural
+Resource Report NPS/NCBN/NRR—2018/1712. National Park Service, Fort Collins, Colorado.
 
 **GitHub Repository**: [CoastalVolumeAnalysis_ArcPy](https://github.com/CoastalVolumeAnalysis_ArcPy)
 
@@ -86,8 +90,7 @@ elev_threshold = -0.335 # elevation threshols (all topography below this thresho
 ```
 
 ### Step 3: Run the Script
-- Ensure ArcGIS and Python are set up correctly.
-- Run the script:
+
 ```
 python 3D_Analyst.py
 ```
@@ -99,4 +102,3 @@ The script will produce:
 - Summary tables in excel format in `/08_Tables/` and `/13_TotalTables/`.
 - Feature classes with vectors that reflect volumetric change at points alongshore in `/10_Vectors/` and `/14_TotalVectors/`.
 - Map images of spatial distribution of volumetric change between each survey and across the entire study period in `/15_Images/`.
-```

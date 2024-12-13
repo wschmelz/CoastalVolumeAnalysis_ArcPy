@@ -1593,22 +1593,21 @@ for n in range (2, len(data3) + 1):
 	
 	for lyr in map_obj.listLayers():
 		if lyr.name == veclyre_name:
-			lyr.updateConnectionProperties({"workspace_path": locnvecgdb}, {"workspace_path": locnvecgdb})
-			# Instead of lyr.dataSource = vectorse, update the dataset name properly:
+			lyr.updateConnectionProperties({"workspace_path": locvecgdb}, {"workspace_path": locnvecgdb})
 			old_conn = lyr.connectionProperties
 			new_conn = old_conn.copy()
 			new_conn['dataset'] = vectorse
 			lyr.updateConnectionProperties(old_conn, new_conn)
 			
 		elif lyr.name == veclyrd_name:
-			lyr.updateConnectionProperties({"workspace_path": locnvecgdb}, {"workspace_path": locnvecgdb})
+			lyr.updateConnectionProperties({"workspace_path": locvecgdb}, {"workspace_path": locnvecgdb})
 			old_conn = lyr.connectionProperties
 			new_conn = old_conn.copy()
 			new_conn['dataset'] = vectorsd
 			lyr.updateConnectionProperties(old_conn, new_conn)
 			
 		elif lyr.name == diflyr_name:
-			lyr.updateConnectionProperties({"workspace_path": locndif}, {"workspace_path": locndif})
+			lyr.updateConnectionProperties({"workspace_path": locdif}, {"workspace_path": locndif})
 			old_conn = lyr.connectionProperties
 			new_conn = old_conn.copy()
 			new_conn['dataset'] = difname

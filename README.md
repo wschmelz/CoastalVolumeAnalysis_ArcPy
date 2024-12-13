@@ -17,9 +17,9 @@ Resource Report NPS/NCBN/NRR—2018/1712. National Park Service, Fort Collins, C
 - Calculation of intrasite spatial variability of voumetric change: Volumes of erosion and deposition are discretely calculated for each of any number of spatial compartments within the study area.
 
 **Output Tables and Maps**:
-- Tabular summaries of volumetric changes.
-- Spatial layers for erosion, deposition, and elevation differences.
-- Ready-to-use ArcGIS map projects with updated visualizations.
+- Tables containing metrics of volumetric changes.
+- Raster and feature class spatial data that portray spatial distribution of erosion and deposition through time.
+- ArcGIS map projects with images portraying the volumetric change that were generated using the survey data.
 
 ## Repository Structure
 ```
@@ -66,12 +66,12 @@ Edit the following files based on the study area and analysis requirements:
 
 **3D_Analyst_params.txt: Example**
 ```
-vectormultiplier = .08          #multiplier for visualization vecvtors
+vectormultiplier = .08          # multiplier for visualization vectors
 compbreak1 = 15                 # spatial breakpoint 1
-compbreak2 = 30                 # spatial breakpopint 2
+compbreak2 = 30                 # spatial breakpoint 2
 startdate = "20140131"          # initial survey date
 enddate = "20160121"            # final survey date
-marker_labels = 250,500,1000    # volume in cubic meters that a label will be created
+marker_labels = 250,500,1000    # volume in cubic meters that a image grid label will be created for
 cellsize = 1.0                  # raster cell size
 ```
 
@@ -84,7 +84,7 @@ compdirection = "left"  # direction of shoreline from the basline
 distance = 30           # alongshore distance for each compartment
 length = 700            # max cross-shore length of compartments
 compartments = 45       # number of compartments in the study area
-elev_threshold = -0.335 # elevation threshols (all topography below this threshold will not be considered in volumetric change analysis)
+elev_threshold = -0.335 # elevation threshold (all topography below this threshold will not be considered in volumetric change analysis)
 ```
 
 ### Step 3: Run the Script

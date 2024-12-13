@@ -924,6 +924,7 @@ for n in range (2, len(data) + 1):
 
 	aprx.saveACopy(locmap + difname + ".aprx")
 	print (titles[n-2] + " map created")
+	del aprx
 
 	
 ################################################################################################################
@@ -1557,11 +1558,6 @@ for n in range (2, len(data3) + 1):
 
 	title = site[0:3] + " Erosion and Deposition" + "\n" + titles2[n-2]
 	
-
-	dif = locndif + difs[n-1]
-	difname = str(difs[n-1])
-	dif_F_name = 'D' + difname[-12:]
-
 	vectorse = "Vectors_Erosion_" + difname
 	vectorsd = "Vectors_Deposition_" + difname
 
@@ -1590,29 +1586,44 @@ for n in range (2, len(data3) + 1):
 	map_obj.addDataFromPath(veclyrd_path)
 	map_obj.addDataFromPath(mrklyr_path)
 	map_obj.addDataFromPath(baslyr_path)
-	
+		
 	for lyr in map_obj.listLayers():
 		if lyr.name == veclyre_name:
-			lyr.updateConnectionProperties({"workspace_path": locvecgdb}, {"workspace_path": locnvecgdb})
+
+			old_conn = lyr.connectionProperties
+			new_conn = old_conn.copy()			
+			new_conn['workspace_path'] = locnvecgdb
+			lyr.updateConnectionProperties(old_conn, new_conn)
+			
 			old_conn = lyr.connectionProperties
 			new_conn = old_conn.copy()
 			new_conn['dataset'] = vectorse
-			lyr.updateConnectionProperties(old_conn, new_conn)
+			lyr.updateConnectionProperties(old_conn, new_conn)				
 			
 		elif lyr.name == veclyrd_name:
-			lyr.updateConnectionProperties({"workspace_path": locvecgdb}, {"workspace_path": locnvecgdb})
+			
+			old_conn = lyr.connectionProperties
+			new_conn = old_conn.copy()			
+			new_conn['workspace_path'] = locnvecgdb
+			lyr.updateConnectionProperties(old_conn, new_conn)
+			
 			old_conn = lyr.connectionProperties
 			new_conn = old_conn.copy()
 			new_conn['dataset'] = vectorsd
 			lyr.updateConnectionProperties(old_conn, new_conn)
 			
 		elif lyr.name == diflyr_name:
-			lyr.updateConnectionProperties({"workspace_path": locdif}, {"workspace_path": locndif})
+
+			old_conn = lyr.connectionProperties
+			new_conn = old_conn.copy()			
+			new_conn['workspace_path'] = locndif
+			lyr.updateConnectionProperties(old_conn, new_conn)
+			
 			old_conn = lyr.connectionProperties
 			new_conn = old_conn.copy()
 			new_conn['dataset'] = difname
 			lyr.updateConnectionProperties(old_conn, new_conn)
-
+		
 	layouts = aprx.listLayouts()
 	if layouts:
 		layout = layouts[0] 

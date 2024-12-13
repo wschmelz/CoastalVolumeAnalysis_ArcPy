@@ -1,12 +1,12 @@
-ArcPy Tool for Coastal Geomorphological Change Analysis
+**ArcPy Tool for Coastal Geomorphological Change Analysis**
 
-Overview
+**Overview**
 
 	The 3D_Analyst.py script programatically processes multiple temporally distinct topographical survey datasets and calculates the volumetric change occurring between surveys throughout a survey site using ArcGIS and ArcPy. The script processes survey data stored within a shapefile to generate Digital Elevation Models (DEMs) within a defined three-dimensional spatial domain, and makes the volumetric change calculations. The outputs of the script are data tables that record spatiotemporal calculations of volumetric change, raster datasets that represent the spatial distribution of erosion and deposition between surveys, and images that visualize the spatiotemporal changes.
 
 	GitHub Repository: CoastalVolumeAnalysis_ArcPy
 
-Key methodological aspects
+**Key methodological aspects**
 
     DEM interpolation: Script generates DEMs from topographical survey data using Delaunay triangulation.
     Volumetric change calculation: Script generates difference rasters between surveys and uses these data to calculate volumetric change across the survey area.
@@ -17,7 +17,7 @@ Key methodological aspects
         Spatial layers for erosion, deposition, and elevation differences.
         Ready-to-use ArcGIS map projects with updated visualizations.
 
-Repository Structure
+**Repository Structure**
 
 	/01_Benchmarks/           # Directory to store benchmark control points for surveys (not needed to run script)
 	/02_RawData/              # Directory to store raw input survey data (not needed to run script)
@@ -40,29 +40,29 @@ Repository Structure
 	3D_Analyst_params.txt     # Analysis parameter file
 	Compartment_params.txt    # Compartment geometry file
 
-Required software
+**Required software**
 
     ArcGIS Pro (with Spatial Analyst and 3D Analyst extensions)
     Python 3.x with ArcPy installed
 
-Data
+**Data**
 
     Input survey data must be provided as shapefiles named in the format: [Code]_3D_[YYYYMMDD].shp (e.g., CZo_3D_20140131.shp).
 
-Configuration Files
+**Configuration Files**
 
     3D_Analyst_params.txt: Specifies analysis parameters.
     Compartment_params.txt: Defines spatial compartment geometry.
 
-Setup and Usage
+**Setup and Usage**
 
-Step 1: Prepare Data
+**Step 1: Prepare Data**
 
     Create shapefiles from survey data with parameters defined in Psuty et al. (2018) SOP6, and place these survey shapefiles into the /03_Shapefiles/ directory.
 	Create data items like the base surface and compartment shapefiles that are described in Psuty et al. (2018) SOP7 
     Ensure shapefiles adhere to the naming format and include the required attributes [ID,X,Y,Z,CODE].
 
-Step 2: Configure Parameters
+**Step 2: Configure Parameters**
 
 	Edit the following files based on the study area and analysis requirements:
 
@@ -87,14 +87,14 @@ Step 2: Configure Parameters
 			compartments = 45		# number of compartments in the study area
 			elev_threshold = -0.335	# elevation threshols (all topography below this threshold will not be considered in volumetric change analysis)
 
-Step 3: Run the Script
+**Step 3: Run the Script**
 
     Ensure ArcGIS and Python are set up correctly.
     Run the script:
 
     python 3D_Analyst.py
 
-Output
+**Output**
 	The script will produce:
 	
 		DEM and difference rasters located in /06_Rasters/, /07_Differences/, and /12_TotalDifferences/ .

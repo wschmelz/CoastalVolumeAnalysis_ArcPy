@@ -38,8 +38,6 @@ Resource Report NPS/NCBN/NRR—2018/1712. National Park Service, Fort Collins, C
 /13_TotalTables/          # Endpoint volumetric change  tables
 /14_TotalVectors/         # Endpoint vector feature classes
 /15_Images/               # Map images portraying volumetric change
-/Template/                # Template ArcGIS project for visualization
-/__pycache__/             # Python cache files
 3D_Analyst.py             # Main script
 3D_Analyst_params.txt     # Analysis parameter file
 Compartment_params.txt    # Compartment geometry file

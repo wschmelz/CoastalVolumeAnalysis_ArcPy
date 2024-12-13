@@ -1,5 +1,3 @@
-```md
-
 # ArcPy Tool for Coastal Geomorphological Change Analysis
 
 ## Overview
@@ -86,8 +84,7 @@ elev_threshold = -0.335 # elevation threshols (all topography below this thresho
 ```
 
 ### Step 3: Run the Script
-- Ensure ArcGIS and Python are set up correctly.
-- Run the script:
+
 ```
 python 3D_Analyst.py
 ```
@@ -99,4 +96,3 @@ The script will produce:
 - Summary tables in excel format in `/08_Tables/` and `/13_TotalTables/`.
 - Feature classes with vectors that reflect volumetric change at points alongshore in `/10_Vectors/` and `/14_TotalVectors/`.
 - Map images of spatial distribution of volumetric change between each survey and across the entire study period in `/15_Images/`.
-```

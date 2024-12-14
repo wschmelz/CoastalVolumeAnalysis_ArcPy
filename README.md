@@ -9,7 +9,7 @@ Psuty, N. P., W. J. Schmelz, and A. Habeck. 2018. Northeast Coastal and Barrier 
 geomorphological monitoring protocol: Part III – coastal landform elevation models. Natural
 Resource Report NPS/NCBN/NRR—2018/1712. National Park Service, Fort Collins, Colorado.
 
-**GitHub Repository**: [CoastalVolumeAnalysis_ArcPy](https://github.com/CoastalVolumeAnalysis_ArcPy)
+**GitHub Repository**: [CoastalVolumeAnalysis_ArcPy](https://github.com/wschmelz/CoastalVolumeAnalysis_ArcPy.git)
 
 ## Key methodological aspects
 - DEM interpolation: Script generates DEMs from topographical survey data using Delaunay triangulation.

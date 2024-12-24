@@ -1,0 +1,18 @@
+#multiplier of volumetric output for creation of vectors
+
+vectormultiplier = .08
+
+#compartment numbers to segregate analysis
+
+compbreak1 = 15
+compbreak2 = 30
+
+#Enter start date of GPS surveys and end date for total change analysis in "yyyymmdd" format
+
+startdate = "20140131"
+
+enddate = "20160121"
+
+marker_labels = 250,500,1000
+
+cellsize = 1.0

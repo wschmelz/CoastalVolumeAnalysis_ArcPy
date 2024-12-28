@@ -12,8 +12,6 @@ authors:
     affiliation: 1,2
   - name: Norbert P. Psuty 
     affiliation: 2	
-  - name: Andrea Habeck
-    affiliation: 2		
   - name: Katherine Ames
     affiliation: 2
   - name: Glenn Liu

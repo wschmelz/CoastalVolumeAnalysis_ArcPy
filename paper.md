@@ -24,8 +24,7 @@ affiliations:
   - name: MIT-WHOI Joint Program in Oceanography/Applied Ocean Science and Engineering, Cambridge, MA
     index: 3	
   - name: Physical Oceanography Department, Woods Hole Oceanographic Institution, Falmouth, MA
-    index: 4		
-	
+    index: 4
 date: 7 January 2025
 bibliography: paper.bib
 

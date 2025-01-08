@@ -9,13 +9,13 @@ tags:
 authors:
   - name: William J. Schmelz
     orcid: 0000-0002-2588-7985
-    affiliation: [1,2]
+    affiliation: "1, 2"
   - name: Norbert P. Psuty 
-    affiliation: [2]	
+    affiliation: 2	
   - name: Katherine Ames
-    affiliation: [2]
+    affiliation: 2
   - name: Glenn Liu
-    affiliation: [2,3,4]	
+    affiliation: "2, 3, 4"	
 affiliations:
   - name: Department of Earth & Planetary Sciences, Rutgers University, 610 Taylor Road, Piscataway, NJ
     index: 1

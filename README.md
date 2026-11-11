@@ -6,7 +6,7 @@
 <p align="center"><strong>An ArcPy workflow for measuring coastal change</strong></p>
 
 <p align="center">
-  <img src="assets/coastal-crew.png" alt="Six coastal researchers surveying a beach with a drone, RTK-GNSS rover and base station, laptop, field tablet, and ground-control target." width="780">
+  <img src="assets/coastal-crew.png" alt="Five researchers on a broad beach with distant grassy dunes and a sloping beach face: a drone pilot and spotter, an RTK-GNSS surveyor, a laptop analyst, and a technician placing a ground-control target." width="900">
 </p>
 
 <p align="center">

@@ -1,4 +1,20 @@
-# ArcPy Tool for Coastal Geomorphological Change Analysis
+<!-- Coastal project header: artwork and lettering are stored in assets/. -->
+<h1 align="center">
+  <img src="assets/coastal-title.svg" alt="Coastal Volume Analysis" width="900">
+</h1>
+
+<p align="center"><strong>An ArcPy workflow for measuring coastal change</strong></p>
+
+<p align="center">
+  <img src="assets/coastal-crew.png" alt="Six coastal researchers surveying a beach with a drone, RTK-GNSS rover and base station, laptop, field tablet, and ground-control target." width="780">
+</p>
+
+<p align="center">
+  <a href="#overview">Overview</a> &nbsp;·&nbsp; <a href="#key-methodological-aspects">Methods</a> &nbsp;·&nbsp; <a href="#setup-and-usage">Setup</a> &nbsp;·&nbsp; <a href="#output">Output</a> &nbsp;·&nbsp; <a href="paper.md">Manuscript</a>
+</p>
+<!-- End coastal project header. -->
+
+---
 
 ## Overview
 The 3D_Analyst.py script programatically processes multiple temporally distinct topographical survey datasets and calculates the volumetric change occurring between surveys throughout a survey site using ArcGIS and ArcPy. The script processes survey data stored within a shapefile to generate Digital Elevation Models (DEMs) within a defined three-dimensional spatial domain, and makes the volumetric change calculations. The outputs of the script are data tables that record spatiotemporal calculations of volumetric change, raster datasets that represent the spatial distribution of erosion and deposition between surveys, and images that visualize the spatiotemporal changes. 
